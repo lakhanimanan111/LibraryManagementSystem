@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>LibraryManagement</display-name>
+  <!-- <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list> -->
+  
+  <servlet>
+  	<servlet-name>SearchController</servlet-name>
+  	<servlet-class>com.manan.dbproject.controller.SearchController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>SearchController</servlet-name>
+  	<url-pattern>/SearchController</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>CheckoutController</servlet-name>
+  	<servlet-class>com.manan.dbproject.controller.CheckoutController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>CheckoutController</servlet-name>
+  	<url-pattern>/CheckoutController</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>CheckInController</servlet-name>
+  	<servlet-class>com.manan.dbproject.controller.CheckInController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>CheckInController</servlet-name>
+  	<url-pattern>/CheckInController</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>UpdateCheckInController</servlet-name>
+  	<servlet-class>com.manan.dbproject.controller.UpdateCheckInController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>UpdateCheckInController</servlet-name>
+  	<url-pattern>/UpdateCheckInController</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>BorrowerController</servlet-name>
+  	<servlet-class>com.manan.dbproject.controller.BorrowerController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>BorrowerController</servlet-name>
+  	<url-pattern>/BorrowerController</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>FinesCalculationController</servlet-name>
+  	<servlet-class>com.manan.dbproject.controller.FinesCalculationController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>FinesCalculationController</servlet-name>
+  	<url-pattern>/FinesCalculationController</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>DisplayFinesController</servlet-name>
+  	<servlet-class>com.manan.dbproject.controller.DisplayFinesController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>DisplayFinesController</servlet-name>
+  	<url-pattern>/DisplayFinesController</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>CheckFinesController</servlet-name>
+  	<servlet-class>com.manan.dbproject.controller.CheckFinesController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>CheckFinesController</servlet-name>
+  	<url-pattern>/CheckFinesController</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>FinePaymentController</servlet-name>
+  	<servlet-class>com.manan.dbproject.controller.FinePaymentController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>FinePaymentController</servlet-name>
+  	<url-pattern>/FinePaymentController</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>CheckPreviousFinesController</servlet-name>
+  	<servlet-class>com.manan.dbproject.controller.CheckPreviousFinesController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>CheckPreviousFinesController</servlet-name>
+  	<url-pattern>/CheckPreviousFinesController</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
